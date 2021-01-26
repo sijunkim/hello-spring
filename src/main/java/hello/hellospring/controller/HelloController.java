@@ -39,7 +39,6 @@ public class HelloController {
         }
     }
 
-
     @GetMapping("hello-api")
     @ResponseBody
     public Hello helloApi(@RequestParam("name") String name) {
@@ -47,7 +46,7 @@ public class HelloController {
         hello.setName(name);
         return hello;
     }
-    
+
 }
 
 
